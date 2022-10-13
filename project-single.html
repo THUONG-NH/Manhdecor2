@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 1</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="plugins/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <header>
+      <!-- The overlay -->
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="close-btn link" onclick="closeNav()"
+          >&times;</a
+        >
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a class="link" href="about.html">About</a>
+          <a class="link" href="services.html">Services</a>
+          <a class="link" href="projects.html">Projects</a>
+          <a class="link" href="contact.html">Contact</a>
+          <div class="overlay-social">
+            <div class="social-area">
+              <a
+                href="https://www.facebook.com/M%E1%BA%A1nh-Decor-107647928651264"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span class="social-icon"
+                  ><i class="fa-brands fa-square-facebook"></i></span
+              ></a>
+              <a
+                href="https://www.facebook.com/M%E1%BA%A1nh-Decor-107647928651264"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span class="social-icon"
+                  ><i class="fa-brands fa-youtube"></i></span
+              ></a>
+              <a
+                href="https://www.facebook.com/M%E1%BA%A1nh-Decor-107647928651264"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span class="social-icon"
+                  ><i class="fa-brands fa-tiktok"></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- The navbar -->
+      <div id="navbar" class="navbar">
+        <!-- Logo -->
+        <a href="index.html"
+          ><img class="logo" src="images/logo.png" alt="logo" srcset=""
+        /></a>
+        <!-- Icon -->
+        <div class="icon" onclick="openNav()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Banner -->
+      <div class="banner">
+        <div
+          class="banner-image"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0.2)
+              ),
+              url(images/bg_01.jpg);
+          "
+        >
+          <div class="banner-text">
+            <h1>Project 1</h1>
+            <ul class="breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="project-single.html">Project 1</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section>
+        <div class="section-container">
+          <div class="row">
+            <div class="col-sm-9">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/1.jpeg" alt="" style="opacity: 1;">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/2.jpg" alt="" style="opacity: 1;">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/3.jpg" alt="" style="opacity: 1;">
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="project-details">
+                    <h1>LOREM</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan semper enim. Aliquam sed mauris a ex venenatis semper.</p>
+                    <b>Client</b>
+                    <p>Lorem ipsum</p>
+                    <b>Architect</b>
+                    <p>Lorem ipsum</p>
+                    <b>Location</b>
+                    <p>Lorem ipsum</p>
+                    <b>Size</b>
+                    <p>Lorem ipsum</p>
+                    <b>Year Completed</b>
+                    <p>Lorem ipsum</p>
+                    <b>Categories</b>
+                    <p>Lorem ipsum</p>
+
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- Container end -->
+      </section>
+      <!-- Section end -->
+    </main>
+    <footer class="footer-side">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="col-wrapper">
+            <ul class="menu-bottom">
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="services.html">Project</a>
+              </li>
+              <li>
+                <a href="projects.html">Project</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="col-wrapper">
+            <p>© 2022 manhdecor. all rights reserved.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="col-wrapper">
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><span class="social-icon"
+                ><i class="fa-brands fa-square-facebook"></i></span
+            ></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><span class="social-icon"
+                ><i class="fa-brands fa-youtube"></i></span
+            ></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><span class="social-icon"
+                ><i class="fa-brands fa-tiktok"></i></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button onclick="topFunction()" id="to-top" title="Go to top">
+      <i class="fa-sharp fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="plugins/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a55ed11a8a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/app2.js"></script>
+  </body>
+</html>

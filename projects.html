@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="plugins/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <header>
+      <!-- The overlay -->
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="close-btn link" onclick="closeNav()"
+          >&times;</a
+        >
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a class="link" href="about.html">About</a>
+          <a class="link" href="services.html">Services</a>
+          <a class="link" href="projects.html">Projects</a>
+          <a class="link" href="contact.html">Contact</a>
+          <div class="overlay-social">
+            <div class="social-area">
+              <a
+                href="https://www.facebook.com/M%E1%BA%A1nh-Decor-107647928651264"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span class="social-icon"
+                  ><i class="fa-brands fa-square-facebook"></i></span
+              ></a>
+              <a
+                href="https://www.facebook.com/M%E1%BA%A1nh-Decor-107647928651264"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span class="social-icon"
+                  ><i class="fa-brands fa-youtube"></i></span
+              ></a>
+              <a
+                href="https://www.facebook.com/M%E1%BA%A1nh-Decor-107647928651264"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span class="social-icon"
+                  ><i class="fa-brands fa-tiktok"></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- The navbar -->
+      <div id="navbar" class="navbar">
+        <!-- Logo -->
+        <a href="index.html"
+          ><img class="logo" src="images/logo.png" alt="logo" srcset=""
+        /></a>
+        <!-- Icon -->
+        <div class="icon" onclick="openNav()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Banner -->
+      <div class="banner">
+        <div
+          class="banner-image"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0.2)
+              ),
+              url(images/bg_01.jpg);
+          "
+        >
+          <div class="banner-text">
+            <h1>Projects</h1>
+            <ul class="breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="projects.html">Projects</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section>
+        <div class="section-container">
+          <!-- Control buttons -->
+          <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')">
+              Show all
+            </button>
+            <button class="btn" onclick="filterSelection('retail')">
+              Retail
+            </button>
+            <button class="btn" onclick="filterSelection('office')">
+              Office
+            </button>
+            <button class="btn" onclick="filterSelection('hotel')">
+              Hotel
+            </button>
+            <button class="btn" onclick="filterSelection('food')">
+              Food & Beverage
+            </button>
+            <button class="btn" onclick="filterSelection('university')">
+              University
+            </button>
+          </div>
+          <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+          <div class="container">
+            <div class="row no-margin">
+              <div class="col-md-6 col-lg-4 project-item retail">
+                <div class="project-zoom-icon">
+                  <i class="fa-solid fa-magnifying-glass-plus" onclick="openModal();currentSlide(1)"></i>
+                </div>
+                <img
+                  class="project-img"
+                  src="images/1.jpeg"
+                  alt=""
+                />
+                <div class="project-info">
+                  <a href="project-single.html">
+                    Lorem Ipsum
+                  </a>
+                  <p>Lorem ipsum dolor sit amet</p> 
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 project-item retail">
+                <img
+                  class="project-img"
+                  src="images/1.jpeg"
+                  alt=""
+                  onclick="openModal();currentSlide(2)"
+                />
+              </div>
+              <div class="col-md-6 col-lg-4 project-item food">
+                <img class="project-img" src="images/1.jpeg" alt="" />
+              </div>
+              <div class="col-md-6 col-lg-4 project-item food">
+                <img class="project-img" src="images/2.jpg" alt="" />
+              </div>
+              <div class="col-md-6 col-lg-4 project-item hotel">
+                <img class="project-img" src="images/3.jpg" alt="" />
+              </div>
+              <div class="col-md-6 col-lg-4 project-item hotel">
+                <img class="project-img" src="images/3.jpg" alt="" />
+              </div>
+              <div class="col-md-6 col-lg-4 project-item office">
+                <img class="project-img" src="images/2.jpg" alt="" />
+              </div>
+              <div class="col-md-6 col-lg-4 project-item office">
+                <img class="project-img" src="images/1.jpeg" alt="" />
+              </div>
+              <div class="col-md-6 col-lg-4 project-item university">
+                <img class="project-img" src="images/1.jpeg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Container end -->
+      </section>
+      <!-- Section end -->
+
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="number-text">1 / 4</div>
+              <img src="images/1.jpeg" />
+            </div>
+
+            <div class="mySlides">
+              <div class="number-text">2 / 4</div>
+              <img src="images/1.jpeg" />
+            </div>
+
+            <div class="mySlides">
+              <div class="number-text">3 / 4</div>
+              <img src="images/1.jpeg" />
+            </div>
+
+            <div class="mySlides">
+              <div class="number-text">4 / 4</div>
+              <img src="images/1.jpeg" />
+            </div>
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+      </div>
+      <!-- The Modal/Lightbox end -->
+    </main>
+    <footer class="footer-side">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="col-wrapper">
+            <ul class="menu-bottom">
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="services.html">Project</a>
+              </li>
+              <li>
+                <a href="projects.html">Project</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="col-wrapper">
+            <p>© 2022 manhdecor. all rights reserved.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="col-wrapper">
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><span class="social-icon"
+                ><i class="fa-brands fa-square-facebook"></i></span
+            ></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><span class="social-icon"
+                ><i class="fa-brands fa-youtube"></i></span
+            ></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><span class="social-icon"
+                ><i class="fa-brands fa-tiktok"></i></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button onclick="topFunction()" id="to-top" title="Go to top">
+      <i class="fa-sharp fa-solid fa-arrow-up"></i>
+    </button>
+    <script src="plugins/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a55ed11a8a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

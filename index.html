@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manhdecor</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="plugins/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <!-- The overlay -->
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="close-btn link" onclick="closeNav()"
+          >&times;</a
+        >
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a class="link" href="about.html">About</a>
+          <a class="link" href="services.html">Services</a>
+          <a class="link" href="projects.html">Projects</a>
+          <a class="link" href="contact.html">Contact</a>
+          <div class="overlay-social">
+            <div class="social-area">
+              <a
+                href="https://www.facebook.com/M%E1%BA%A1nh-Decor-107647928651264"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span class="social-icon"
+                  ><i class="fa-brands fa-square-facebook"></i></span
+              ></a>
+              <a
+                href="https://www.facebook.com/M%E1%BA%A1nh-Decor-107647928651264"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span class="social-icon"
+                  ><i class="fa-brands fa-youtube"></i></span
+              ></a>
+              <a
+                href="https://www.facebook.com/M%E1%BA%A1nh-Decor-107647928651264"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span class="social-icon"
+                  ><i class="fa-brands fa-tiktok"></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar">
+        <a href="index.html"
+          ><img class="logo" src="images/logo.png" alt="logo" srcset=""
+        /></a>
+        <div class="icon" onclick="openNav()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </header>
+    <!-- Slider main container -->
+    <main class="swiper mySwiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="images/1.jpeg" />
+          <div class="slide-cap">
+            <h1>Lorem Ipsum</h1>
+            <div class="add">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </div>
+            <a href="#" class="more">learn more</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/2.jpg" />
+          <div class="slide-cap">
+            <h1>Lorem Ipsum</h1>
+            <div class="add">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </div>
+            <a href="#" class="more">learn more</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/3.jpg" />
+          <div class="slide-cap">
+            <h1>Lorem Ipsum</h1>
+            <div class="add">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </div>
+            <a href="#" class="more">learn more</a>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="social-area">
+          <a href="#" target="_blank" rel="noopener noreferrer"><span class="social-icon"><i class="fa-brands fa-square-facebook"></i></span></a>
+          <a href="#" target="_blank" rel="noopener noreferrer"><span class="social-icon"><i class="fa-brands fa-youtube"></i></span></a>
+          <a href="#" target="_blank" rel="noopener noreferrer"><span class="social-icon"><i class="fa-brands fa-tiktok"></i></span></a>
+        </div>
+      </div>
+    </footer>
+    <script src="plugins/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a55ed11a8a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
